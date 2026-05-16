@@ -1,16 +1,151 @@
-# React + Vite
+# React Job Card UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern job card UI component built using React and props.
 
-Currently, two official plugins are available:
+This project displays job listings dynamically using reusable card components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Reusable React Card Component
+- Dynamic data using props
+- Company logo support
+- Save button with icon
+- Job role display
+- Tags for experience/type
+- Salary and location section
+- Apply button UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- JavaScript
+- CSS
+- Lucide React Icons
+
+---
+
+## Props Used
+
+| Prop | Description |
+|---|---|
+| `logo` | Company logo image |
+| `company` | Company name |
+| `datePosted` | Job posted date |
+| `post` | Job title |
+| `tag1` | Experience level |
+| `tag2` | Job type |
+| `pay` | Salary/package |
+| `location` | Job location |
+
+---
+
+## Example Usage
+
+```jsx
+<Card
+  logo="company-logo-url"
+  company="Google"
+  datePosted="2 days ago"
+  post="Frontend Developer"
+  tag1="Senior Level"
+  tag2="Full Time"
+  pay="$120/hr"
+  location="Bangalore, India"
+/>
+```
+
+---
+
+## Component Structure
+
+```jsx
+<Card />
+```
+
+The component contains:
+
+- Top Section
+  - Company logo
+  - Save button
+
+- Center Section
+  - Company name
+  - Posting date
+  - Job role
+  - Tags
+
+- Bottom Section
+  - Salary
+  - Location
+  - Apply button
+
+---
+
+## Installation
+
+```bash
+npm install
+```
+
+---
+
+## Install Lucide React
+
+```bash
+npm install lucide-react
+```
+
+---
+
+## Run Project
+
+```bash
+npm run dev
+```
+
+---
+
+## Learning Concepts
+
+- React Props
+- Reusable Components
+- JSX
+- Component Structure
+- Dynamic UI Rendering
+- Icons in React
+
+---
+
+## Folder Structure
+
+```txt
+src
+│
+├── components
+│   └── Card.jsx
+│
+├── App.jsx
+├── App.css
+├── main.jsx
+```
+
+---
+
+## Future Improvements
+
+- Responsive Design
+- Dark Mode
+- API Integration
+- Search & Filters
+- Bookmark Functionality
+- Apply Page
+
+---
+
+## Preview
+
+A job portal style card interface inspired by modern hiring platforms.
