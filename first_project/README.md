@@ -1,16 +1,113 @@
-# React + Vite
+# React Card Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple reusable Card component built using React props.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Reusable React component
+- Dynamic content using props
+- Displays:
+  - Image
+  - User name
+  - Description
+  - Button
+- Beginner-friendly project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript
+- CSS
+
+---
+
+## Props Used
+
+| Prop | Description |
+|---|---|
+| `user` | Displays user name |
+| `para` | Displays paragraph text |
+
+---
+
+## Example Usage
+
+```jsx
+<Card
+  user="Sakshi Singh"
+  para="Frontend Developer"
+/>
+```
+
+---
+
+## Component Code
+
+```jsx
+import React from 'react'
+
+const Card = (props) => {
+  return (
+    <div className="card">
+
+      <img
+        src="https://images.unsplash.com/photo-1778351983804-e1e267d1f94c?w=1000&auto=format&fit=crop&q=60"
+        alt=""
+      />
+
+      <h1>{props.user}</h1>
+
+      <p>{props.para}</p>
+
+      <button>View Profile</button>
+
+    </div>
+  )
+}
+
+export default Card
+```
+
+---
+
+## Installation
+
+```bash
+npm install
+```
+
+---
+
+## Run Project
+
+```bash
+npm run dev
+```
+
+---
+
+## Learning Concepts
+
+- React Components
+- Props
+- Reusable UI
+- JSX
+- Functional Components
+
+---
+
+## Folder Structure
+
+```txt
+src
+│
+├── components
+│   └── Card.jsx
+│
+├── App.jsx
+├── main.jsx
+```
