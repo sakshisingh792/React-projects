@@ -6,6 +6,5 @@ A collection of my React projects.
 
 ## Projects
 
-- Project 1
-- Project 2
-- Project 3
+- Personal Card
+- Job Portal Card
