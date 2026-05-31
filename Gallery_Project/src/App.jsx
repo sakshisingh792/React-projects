@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div className='bg-[#412D15] overflow-auto h-screen p-4 text-white'>
       
-       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6'>
+       <div className='columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-5 space-y-5'>
         {printUserData}
        </div>
 
