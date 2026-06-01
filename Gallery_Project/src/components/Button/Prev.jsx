@@ -1,22 +1,22 @@
 import React from 'react'
 
-const Prev = ({index,setindex,setuserData}) => {
+const Prev = ({ index, setIndex }) => {
   return (
-    <div>
-         <button className='bg-[#E1DCC9] text-black rounded text-sm cursor-pointer active:scale-95 px-4 py-2 font-bold'
-        onClick={()=>{
-          if (index>1){
-            setuserData([])
-            setindex(index-1)
-            
-          }
-        }}
-        >
-          Prev
-
-        </button>
-
-    </div>
+    <button 
+      onClick={() => {
+        if (index > 1) {
+          setIndex(index - 1)
+        }
+      }}
+      disabled={index <= 1} // Disables the button visually if on page 1
+      className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+        index <= 1 
+          ? 'bg-gray-600 text-gray-400 cursor-not-allowed' 
+          : 'bg-amber-700 hover:bg-amber-600'
+      }`}
+    >
+      Prev
+    </button>
   )
 }
 
